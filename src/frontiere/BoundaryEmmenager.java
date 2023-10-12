@@ -1,5 +1,7 @@
 package frontiere;
 
+import java.util.Scanner;
+
 import controleur.ControlEmmenager;
 
 public class BoundaryEmmenager {
@@ -40,6 +42,10 @@ public class BoundaryEmmenager {
 	}
 
 	private void emmenagerDruide(String nomVisiteur) {
-		//TODO a completer
+		StringBuilder question = new StringBuilder();
+		question.append("Bienvenue druide" +nomVisiteur);
+		question.append("Quelle est votre force ?");
+		Scanner scan = new Scanner(System.in);
+		String ForceDruide = scan.nextLine();
 	}
 }
